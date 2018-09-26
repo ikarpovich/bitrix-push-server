@@ -102,4 +102,4 @@ Mode should be either `pub` or `sub`. You have to launch two containers with eac
 # License
 
 License for this image is MIT.
-Bitrix and Bitrix Environment, Bitri Push Server are products licensed by Bitrix Inc. under their licenses terms.
+Bitrix and Bitrix Environment, Bitri Push Server are products licensed by Bitrix Inc. under their license terms.
