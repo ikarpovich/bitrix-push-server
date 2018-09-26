@@ -1,0 +1,30 @@
+{
+  "servers": [
+    {
+      "name": "${MODE}-${LISTEN_PORT}",
+      "port": ${LISTEN_PORT},
+      "hostname": "${LISTEN_HOSTNAME}",
+      "backlog": 1024,
+      "routes": {${ROUTES}}
+    }
+  ],
+  "publishMode": ${PUBLISH_MODE},
+  "processUniqueId": "${MODE}-${LISTEN_PORT}",
+  "clusterMode": true,
+  "storage": {
+    "type": "redis",
+    "host": "${REDIS_HOST}",
+    "port": "${REDIS_PORT}",
+    "messageTLL": 86400,
+    "channelTLL": 86400,
+    "onlineTLL": 120,
+    "onlineDelta": 10
+  },
+  "security": {
+    "key": "${SECURITY_KEY}"
+  },
+  "debug": {
+    "ip": ["127.0.0.1", "172.0.0.0/8"],
+    "folderName": "/tmp"
+  }
+}
