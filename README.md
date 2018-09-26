@@ -29,7 +29,7 @@ version: '3'
 services:
 
   push-server-sub:
-    image: bitrix-push-server
+    image: ikarpovich/bitrix-push-server
     links:
       - redis
     networks:
@@ -48,7 +48,7 @@ services:
       - traefik.docker.network=traefik-net
       
   push-server-pub:
-    image: bitrix-push-server
+    image: ikarpovich/bitrix-push-server
     links:
       - redis
     networks:
